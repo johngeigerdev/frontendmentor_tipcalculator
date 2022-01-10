@@ -5,40 +5,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link 
+  href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" 
+  rel="stylesheet">
+<title>Tip calculator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
-  Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="header-container">
+    <h1 class="header">Spli &NewLine; tter</h1>
   </div>
+  
+  <div class="background-container">
+    <div class="content-container">
+      <div class="bill-input">
+        <h2>Bill</h2>
+        <i class="uil uil-dollar-alt" id="bill-symbol"></i>
+        <input>
+      </div>
+
+      <h2>Select Tip %</h2>
+      <div class="select-tips">
+        <a class="tip-btn">5%</a>
+        <a class="tip-btn">10%</a>
+        <a class="tip-btn">15%</a>
+        <a class="tip-btn">25%</a>
+        <a class="tip-btn">50%</a>
+        <a class="tip-btn" id="custom-tip"><input placeholder="Custom"></a>
+      </div>
+    
+      <div>
+        <h2>Number of People</h2>
+        <input placeholder="0">
+      </div>
+    
+      <div>
+        <div>
+          <h2>Tip Amount</h2>
+          / person
+        </div>
+        
+        <div>
+          <h2>Total</h2>
+          <p>/ person</p> 
+        </div>
+        
+
+        <button>
+          Reset
+        </button>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" 
+          integrity="sha512-fzff82+8pzHnwA1mQ0dzz9/E0B+ZRizq08yZfya66INZBz86qKTCt9MLU0NCNIgaMJCgeyhujhasnFUsYMsi0Q==" 
+          crossorigin="anonymous" 
+          referrerpolicy="no-referrer">
+  </script>
+  <script src="app.js"></script>
 </body>
 </html>
