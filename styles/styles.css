@@ -37,7 +37,7 @@ body {
 
 .card {
   background-color: white;
-  height: 50px;
+  height: 100%;
   width: 100%;
   border-radius: 2rem 2rem 0 0;
   display: -webkit-box;
@@ -53,5 +53,168 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  gap: 3rem;
+  padding: 2.5rem;
+}
+
+.card .input {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3rem;
+}
+
+.card .input .label-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.6rem 0;
+}
+
+.card .input .label-wrapper label {
+  color: #5e7a7d;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.card .input .label-wrapper .error-msg {
+  color: indianred;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.card .input .inp-text {
+  background-color: #f4fafa;
+  border: none;
+  width: 100%;
+  border-radius: 0.5rem;
+  color: #00494d;
+  font-family: 'Space Mono', monospace;
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: right;
+  padding: 0.5rem 2.4rem;
+}
+
+.card .input .inp-textfocus {
+  outline: none;
+  border: 2px solid #26c0ab;
+}
+
+.card .input .inp-wrapper {
+  position: relative;
+}
+
+.card .input .inp-wrapper img {
+  position: absolute;
+  left: 2.4rem;
+  top: 1.5rem;
+}
+
+.card .input .btn-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-top: 1rem;
+}
+
+.card .input .btn-wrapper .btn {
+  width: 46%;
+  text-align: center;
+  background-color: #00494d;
+  color: white;
+  font-size: 2.4rem;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  padding: 0.6rem 0;
+  -webkit-transition: all -.5s ease;
+  transition: all -.5s ease;
+}
+
+.card .input .btn-wrapper .btn:hover {
+  background-color: #9fe8df;
+}
+
+.card .input .btn-wrapper .btn-active {
+  background-color: #26c0ab;
+  color: #00494d;
+}
+
+.card .input .btn-wrapper .inp-text {
+  width: 46%;
+}
+
+.card .output {
+  background-color: #00494d;
+  width: 100%;
+  border-radius: 1.5rem;
+  padding: 2.2rem;
+}
+
+.card .output .line-wrapper .line-output {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1.4rem 0 2.4rem 0;
+}
+
+.card .output .line-wrapper .line-output .title {
+  color: white;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.card .output .line-wrapper .line-output .desc {
+  color: #7f9c9f;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.card .output .line-wrapper .line-output .value {
+  color: #26c0ab;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.card .output .btn {
+  width: 100%;
+  background-color: #26c0ab;
+  color: #00494d;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 1rem 0;
+  border-radius: 0.5rem;
+  margin-top: 3.4rem;
+  -webkit-transition: all -.5s ease;
+  transition: all -.5s ease;
+}
+
+.card .output .btn:hover {
+  background-color: #9fe8df;
 }
 /*# sourceMappingURL=styles.css.map */
